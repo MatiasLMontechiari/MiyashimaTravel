@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+body {
+    font-family: Poppins, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #434343;
+    text-rendering: optimizeLegibility;
+}
+
+li {
+    text-align: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 110%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(238, 18, 18);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.long-copy {
+    font-weight: 400;
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.left-copy {
+    font-weight: 400;
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: left;
+}
+
+footer {
+    font-size: 85%;
+    background: url(../imagenes/backgroundfooter.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer h2:after{
+    background-color: rgb(255, 255, 255);
+}
+
+section {
+    padding: 5% 0;    
+}
+
+.box {
+    padding: 1%;
+}
+
+/*ARMADO DE GRILLA DE 2 Y 3 COLUMNAS PARA EL SITIO 
+  EN MOBILE SE DEBEN APILAR UNAS ABAJO DE LA OTRA DADO QUE CADA UNA
+  VA A OCUPAR EL 100% DEL ANCHO DE LA PANTALLA*/
+
+.filas {
+    max-width: 1140px;
+    margin: 0 auto;
+    zoom: 1;
+}
+
+.filas:before,
+.filas:after {
+    content:"";
+    display:table;
+}
+.filas:after {
+    clear:both;
+}
+
+.columna {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.columna:first-child { margin-left: 0; }
+
+@media only screen and (max-width: 480px) {
+	.col { 
+        margin: 0;
+	}
+}
+
+.extender-2-of-2 {
+	width: 100%;
+}
+
+.extender-1-of-2 {
+	width: 49.2%;
+}
+
+@media only screen and (max-width: 480px) {
+	.extender-2-of-2 {
+		width: 100%; 
+	}
+	.extender-1-of-2 {
+		width: 100%; 
+	}
+}
+
+.extender-3-of-3 {
+	width: 100%; 
+}
+
+.extender-2-of-3 {
+	width: 66.13%; 
+}
+
+.extender-1-of-3 {
+	width: 32.26%; 
+}
+
+@media only screen and (max-width: 480px) {
+	.extender-3-of-3 {
+		width: 100%; 
+	}
+	.extender-2-of-3 {
+		width: 100%; 
+	}
+	.extender-1-of-3 {
+		width: 100%;
+	}
+}
+
+.header {
+    background:white;
+    position: fixed;
+    width: 100%;
+}
+
+.header a {
+    color: rgb(235, 49, 16);
+}
+
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left:8%;
+}
+
+.logo {
+    background: url(../imagenes/logo2.jpg) no-repeat;
+    padding: 4% 125px;
+    text-indent:-9000px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 40px 0px;
+    margin-right: 40px;
+}
+
+.navigation ul li a:hover{
+    color: black;
+}
+
+/*------------------------------*/
+/* Configuracion Seccion        */
+/* Comenza tu viaje             */
+/*------------------------------*/
+#fullcontainerhome {
+    background-image: url(../imagenes/toriiprincipal.jpg);
+    background-size: cover;
+    padding-top: 500px;
+    color: white;
+}
+
+#downloadguidebox {
+    display: flex;
+    background-color: rgba(230, 28, 28, 0.637);
+}
+
+.buttondownload {
+    margin-top: 50px;
+    margin-left: 100px;
+    display: inline-block;
+    background-color: white;
+    font-size: 100%;
+    font-weight: 500;
+    padding: 20px 60px;
+    border-radius: 10px;
+}
+
+.buttondownload a {
+    color: black;
+    font-size: 90%;
+}
+
+.buttondownload:hover
+{
+    background-color: tomato;
+}
+
+.buttondownload:hover a
+{
+    color: white;
+}
+
+/*----------------------------*/
+/* Configuracion Seccion      */
+/* Seccion comienza tu viaje  */
+/*----------------------------*/
+#section-tulugar {
+    text-align: center;
+    font-size: 85%;
+}
+/*-----------------------------*/
+/* Configuracion Seccion       */
+/* Footer de la pagina         */
+/*-----------------------------*/
+#redes {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    column-count: 4;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#redes li a{
+    display: inline-block;
+	background: url(../imagenes/sprite.png);
+	width:54px;
+	height:54px;
+	text-indent:-9000px;
+	
+}
+#redes li:nth-child(1) a{
+	background-position: 0px -54px;
+	
+}
+#redes li:nth-child(2) a{
+	background-position:-54px -54px;
+}
+#redes li:nth-child(3) a{
+	background-position: -107px -54px;
+	
+}
+#redes li:nth-child(4) a{
+	background-position: -162px -54px;
+	
+}
+/*-----------------------------*/
+/* Configuracion Seccion  Form */
+/* Formulario de contacto      */
+/*-----------------------------*/
+#fullcontainercontact {
+    background-color: rgb(150, 60, 60);
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+#contact-form {
+    margin-top: 80px;
+    margin-left: 170px;
+    margin-right: 170px;
+    padding: 50px 50px;
+    background-color: #f7f4ed;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*-----------------------------*/
+/* Configuracion Seccion  info */
+/*-----------------------------*/
+#fullcontainerinfo {
+    background-color: tomato;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+#section-informacion {
+    text-align: center;
+    font-size: 85%;
+}
+
+/*-----------------------------*/
+/* Configuracion Seccion activi*/
+/*-----------------------------*/
+#fullcontaineractiv {
+    background-color: rgb(216, 59, 59);
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+#section-actividades {
+    text-align: center;
+}

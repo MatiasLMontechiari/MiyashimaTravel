@@ -12,137 +12,138 @@
 </head>
 
 <body>
-        <header class="header">
-            <div class="containter logo-nav-container">
-                <a href="index.html" class="logo">logo</a>
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="informacion.html">Informacion</a></li>
-                        <li><a href="actividades.html">Actividades</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 
-        <main>
-            <div id="fullcontainercontact">
-                <div class="filas">
-                    <h1>Estemos mas cerca</h1>
-                </div>
-            </div>
-            <section>
-                <div class="filas">
-                    <h2>Completa el formulario</h2>
-                    <p class="long-copy">Estamos para ayudarte, dejanos tus datos y nos podremos en contacto, tambien te
-                        enviaremos la guia de viajes para que no te falte nada.</p>
-                </div>
-                <div class="filas">
-                    <form method="post" action="http://recursos.grodriguez.com.ar/FORM/" enctype="multipart/form-data"
-                        id="contact-form">
-                        <div class="filas">
-                            <div class="columna extender-1-of-3">
-                                <label for="nombre">Nombre</label>
-                            </div>
-                            <div class="columna extender-2-of-3">
-                                <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required>
-                            </div>
-                        </div>
-                        <div class="filas">
-                            <div class="columna extender-1-of-3">
-                                <label for="email">Mail</label>
-                            </div>
-                            <div class="columna extender-2-of-3">
-                                <input type="email" name="email" id="email" placeholder="Tu Mail" required>
-                            </div>
-                        </div>
-                        <div class="filas">
-                            <div class="columna extender-1-of-3">
-                                <label for="forma-contacto">Como nos encontraste?</label>
-                            </div>
-                            <div class="columna extender-2-of-3">
-                                <select name="forma-contacto" id="forma-contacto">
-                                    <option value="amigos" selected>Amigos</option>
-                                    <option value="buscadores">Motores de Busqueda</option>
-                                    <option value="ad">Avisos</option>
-                                    <option value="otros">Otros</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="filas">
-                            <div class="columna extender-1-of-3">
-                                <label>Te enviamos la Guia de viajes?</label>
-                            </div>
-                            <div class="columna extender-2-of-3">
-                                <input type="checkbox" name="envio-guia" id="envio-guia" checked> Si!!! por favor!
-                            </div>
-                        </div>
-                        <div class="filas">
-                            <div class="columna extender-1-of-3">
-                                <label>Dejanos un comentario</label>
-                            </div>
-                            <div class="columna extender-2-of-3">
-                                <textarea name="mensaje" placeholder="Deja el mensaje aca"></textarea>
-                            </div>
-                        </div>
-                        <div class="filas">
-                            <div class="columna extender-1-of-3">
-                                <label>&nbsp;</label>
-                            </div>
-                            <div class="columna extender-2-of-3">
-                                <input type="submit" value="Enviar">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="columna extender-1-of-3 box"></div>
-                </div>
-            </section>
-        </main>
-        <footer>
+    <header class="header">
+        <a href="" class="logo">logo</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="informacion.html">Informacion</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="fullcontainercontact">
             <div class="filas">
-                <div class="columna extender-1-of-3 box">
-                    <h2>Link Utiles</h2>
-                    <ul>
-                        <!-- Nuevos Visitantes es un link interno pendiente de desarrollar que solo se accede desde el footer y no desde navegacion -->
-                        <li><a href="#">Nuevos Visitantes</a></li>
-                        <li><a href="https://www.accuweather.com/en/jp/miyajima/2336228/weather-forecast/2336228"
-                                target="_blank">Clima en Miyashima</a></li>
-                        <!-- Otras actividades es un link interno pendiente de desarrollar que solo se accede desde el footer y no desde navegacion -->
-                        <li><a href="#">Otras Actividades</a></li>
-                    </ul>
-                </div>
-                <div class="columna extender-1-of-3 box">
-                    <h2>Sitios Amigos</h2>
-                    <ul>
-                        <li><a href="https://japonismo.com/blog/tag/miyajima" target="_blank">Japonismo</a></li>
-                        <li><a href="https://www.japan.travel/en/" target="_blank">Japan Travel</a></li>
-                        <li><a href="https://www.jal.co.jp/jp/en/" target="_blank">Japan Flying</a></li>
-                    </ul>
-                </div>
-                <div class="columna extender-1-of-3 box">
-                    <h2>Autor</h2>
-                    <ul>
-                        <!-- Link al diseño del porfolio de la materia comunicacion visual (repo Github)-->
-                        <li><a href="https://matiaslmontechiari.github.io/PorfolioWebDesign/" target="_blank">Alumno Matias Montechiari</a></li>
-                        <li><a href="mailto:matias.monte@davinci.edu.ar" target="_blank">matias.monte@davinci.edu.ar</a></li>
-                        <li><a href="https://davinci.edu.ar/" target="_blank">Escuela Da Vinci</a></li>
-                    </ul>
-                </div>
+                <h1>Estemos mas cerca</h1>
+            </div>
+        </div>
+        <section>
+            <div class="filas">
+                <h2>Completa el formulario</h2>
+                <p class="long-copy">Estamos para ayudarte, dejanos tus datos y nos podremos en contacto, tambien te
+                    enviaremos la guia de viajes para que no te falte nada.</p>
             </div>
             <div class="filas">
-                <ul id="redes">
-                    <li><a href="https://www.instagram.com/explore/tags/japon/?hl=es" target="_blank">Instagram</a></li>
-                    <li><a href="https://twitter.com/japanemb_arg?lang=es" target="_blank">Twitter</a></li>
-                    <li><a href="https://es-la.facebook.com/JaponAndMore/" target="_blank">Facebook</a></li>
-                    <li><a href="https://chat.whatsapp.com/KzvHSdwcj3VIoAFEzUunxe" target="_blank">Whatsup</a></li>
+                <form method="post" action="http://recursos.grodriguez.com.ar/FORM/" enctype="multipart/form-data"
+                    id="contact-form">
+                    <div class="filas">
+                        <div class="columna extender-1-of-3">
+                            <label for="nombre">Nombre</label>
+                        </div>
+                        <div class="columna extender-2-of-3">
+                            <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required>
+                        </div>
+                    </div>
+                    <div class="filas">
+                        <div class="columna extender-1-of-3">
+                            <label for="email">Mail</label>
+                        </div>
+                        <div class="columna extender-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Tu Mail" required>
+                        </div>
+                    </div>
+                    <div class="filas">
+                        <div class="columna extender-1-of-3">
+                            <label for="forma-contacto">Como nos encontraste?</label>
+                        </div>
+                        <div class="columna extender-2-of-3">
+                            <select name="forma-contacto" id="forma-contacto">
+                                <option value="amigos" selected>Amigos</option>
+                                <option value="buscadores">Motores de Busqueda</option>
+                                <option value="ad">Avisos</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filas">
+                        <div class="columna extender-1-of-3">
+                            <label>Te enviamos la Guia de viajes?</label>
+                        </div>
+                        <div class="columna extender-2-of-3">
+                            <input type="checkbox" name="envio-guia" id="envio-guia" checked> Si!!! por favor!
+                        </div>
+                    </div>
+                    <div class="filas">
+                        <div class="columna extender-1-of-3">
+                            <label>Dejanos un comentario</label>
+                        </div>
+                        <div class="columna extender-2-of-3">
+                            <textarea name="mensaje" placeholder="Deja el mensaje aca"></textarea>
+                        </div>
+                    </div>
+                    <div class="filas">
+                        <div class="columna extender-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="columna extender-2-of-3">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+                <div class="columna extender-1-of-3 box"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="filas">
+            <div class="columna extender-1-of-3 box">
+                <h2>Link Utiles</h2>
+                <ul>
+                    <!-- Nuevos Visitantes es un link interno pendiente de desarrollar que solo se accede desde el footer y no desde navegacion -->
+                    <li><a href="#">Nuevos Visitantes</a></li>
+                    <li><a href="https://www.accuweather.com/en/jp/miyajima/2336228/weather-forecast/2336228"
+                            target="_blank">Clima en Miyashima</a></li>
+                    <!-- Otras actividades es un link interno pendiente de desarrollar que solo se accede desde el footer y no desde navegacion -->
+                    <li><a href="#">Otras Actividades</a></li>
                 </ul>
             </div>
-            <div class="filas">
-                <p>Este maquetado corresponde a la Materia Maquetado y Diseño Web de la Escuela de Arte Digital Da
-                    Vinci.<br>
-                    Trabajo Practico 2, Turno Noche "A" del año 2020, profesora Mabel Garcia.</p>
+            <div class="columna extender-1-of-3 box">
+                <h2>Sitios Amigos</h2>
+                <ul>
+                    <li><a href="https://japonismo.com/blog/tag/miyajima" target="_blank">Japonismo</a></li>
+                    <li><a href="https://www.japan.travel/en/" target="_blank">Japan Travel</a></li>
+                    <li><a href="https://www.jal.co.jp/jp/en/" target="_blank">Japan Flying</a></li>
+                </ul>
             </div>
-        </footer>
+            <div class="columna extender-1-of-3 box">
+                <h2>Autor</h2>
+                <ul>
+                    <!-- Link al diseño del porfolio de la materia comunicacion visual (repo Github)-->
+                    <li><a href="https://matiaslmontechiari.github.io/PorfolioWebDesign/" target="_blank">Alumno Matias
+                            Montechiari</a></li>
+                    <li><a href="mailto:matias.monte@davinci.edu.ar" target="_blank">matias.monte@davinci.edu.ar</a>
+                    </li>
+                    <li><a href="https://davinci.edu.ar/" target="_blank">Escuela Da Vinci</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="filas">
+            <ul id="redes">
+                <li><a href="https://www.instagram.com/explore/tags/japon/?hl=es" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/japanemb_arg?lang=es" target="_blank">Twitter</a></li>
+                <li><a href="https://es-la.facebook.com/JaponAndMore/" target="_blank">Facebook</a></li>
+                <li><a href="https://chat.whatsapp.com/KzvHSdwcj3VIoAFEzUunxe" target="_blank">Whatsup</a></li>
+            </ul>
+        </div>
+        <div class="filas">
+            <p>Este maquetado corresponde a la Materia Maquetado y Diseño Web de la Escuela de Arte Digital Da
+                Vinci.<br>
+                Trabajo Practico 2, Turno Noche "A" del año 2020, profesora Mabel Garcia.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -9,19 +9,22 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header class="header">
-        <a href="index.html" class="logo">logo</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="informacion.html">Informacion</a></li>
-            <li><a href="actividades.html">Actividades</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Logo</a>
+            <a href="informacion.html" class="nav-right">Información</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -138,6 +141,8 @@
                 Trabajo Practico 2, Turno Noche "A" del año 2020, profesora Mabel Garcia.</p>
         </div>
     </footer>
+    <!--JS-->
+    <script src="js/scriptnav.js"></script>
 </body>
 
 </html>

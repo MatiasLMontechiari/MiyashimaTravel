@@ -13,6 +13,10 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+main {
+    padding-top: 9%;
+}
+
 li {
     text-align: center;
     list-style: none;
@@ -171,38 +175,39 @@ section {
 .topnav {
     background-color: white;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
     display: block;
     color: tomato;
     text-align: center;
-    padding: 50px 16px;
     text-decoration: none;
-    font-size: 17px;
   }
   
-  .nav-right {
-      margin-left: 40%;
+  .topnav a.nav-left-opt {
+      float: right;
+      padding: 4% 3% 0% 0%;
   }
+
+    /* Add an active class to highlight the current page */
+  .topnav a.active {
+    float: left;
+    font-size: 2em;
+    background: url(../imagenes/logo2.jpg) no-repeat;
+    text-indent:-9000px;
+    padding: 5.3% 20% 0% 0%;
+  }
+      
 
   /* Change the color of links on hover */
   .topnav a:hover {
     color: black;
   }
   
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    font-size: 2em;
-    padding: 35px 200px;
-    background: url(../imagenes/logo2.jpg) no-repeat;
-    text-indent:-9000px;
-  }
 
-
-  
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
@@ -212,9 +217,16 @@ section {
     @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
+      margin: 6% 1%;
+      padding: 6% 10%;
       float: right;
       display: block;
     }
+
+    .topnav a.active {
+      padding: 9.5% 35%;
+    }
+    
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -230,8 +242,9 @@ section {
       display: block;
       text-align: left;
     }
-    .nav-right {
-        margin-left: 0%;
+
+    .topnav.responsive a.active {
+      padding: 10% 10%
     }
   }
 

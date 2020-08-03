@@ -4,6 +4,10 @@
     $nombre = str_replace(array("\r","\n"),array(" "," "),$nombre);
     $to = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $file = "folleto.jpg";
+
+    //remitente del correo
+    $from = 'contacto@miyashimatravel.com';
+    $fromName = 'MiyashimaTravel';
     
     //Asunto del email
     $subject = "Gracias por tu contacto $nombre"; 
@@ -16,7 +20,7 @@
         <p>Te adjuntamos la guia de viaje de Miyashima para que la disfrutes y puedas ver la veriedad de lugares que podes visitar</p>';
     
     //Encabezado para información del remitente
-    $headers = "From: MiyashimaTravel"." <"contacto@miyashimatravel.com">";
+    $headers = "From: $fromName"." <".$from.">";
     
     //Limite Email
     $semi_rand = md5(time()); 

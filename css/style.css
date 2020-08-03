@@ -358,6 +358,51 @@ section {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
+.form-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: whitesmoke;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    padding: .6em 1.4em .5em .8em;
+    width: 50%;
+    height: 45px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 30px 0px 0px 0px;
+    border: none;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: tomato;
+}
+
+.input-css {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0px 0px 30px 0px;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+
+
 /*-----------------------------*/
 /* Configuracion Seccion  info */
 /*-----------------------------*/

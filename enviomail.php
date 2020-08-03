@@ -1,5 +1,4 @@
 <?php
-
     // Get the form fields, removes html tags and whitespace.
     $nombre = strip_tags(trim($_POST["nombre"]));
     $nombre = str_replace(array("\r","\n"),array(" "," "),$nombre);
@@ -31,5 +30,4 @@
     
     // Redirect to the index.html page with success code
     header("Location: https://miyashimatravel.netlify.app/index.html");
-
 ?>

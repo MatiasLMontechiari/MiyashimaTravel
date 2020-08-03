@@ -301,6 +301,16 @@ section {
 /* Configuracion Seccion       */
 /* Footer de la pagina         */
 /*-----------------------------*/
+@media screen and (max-width: 480px) {
+    .footer-desktop {
+        display: none;
+    }
+  }
+@media screen and (min-width: 480px) {
+    .footer-mobile {
+        display: none;
+    }
+}
 #redes {
     width: 50%;
     margin-left: auto;

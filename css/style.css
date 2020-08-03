@@ -174,9 +174,13 @@ section {
 .topnav {
     background-color: white;
     overflow: hidden;
-    position: fixed;
     width: 100%;
   }
+  @media screen and (min-width: 480px) {
+   .topnav {
+     position: fixed;
+   }
+}
   
   /* Style the links inside the navigation bar */
   .topnav a {

@@ -2,32 +2,54 @@
     //Se toman los compos del formulario eliminando el contenidod del html
     $nombre = strip_tags(trim($_POST["nombre"]));
     $nombre = str_replace(array("\r","\n"),array(" "," "),$nombre);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $mensaje = trim($_POST["mensaje"]);
-
-    // Se valida el contenido de los datos y en caso de error se dirige a una pagina de error
-    if (empty($nombre) OR empty($mensaje) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://miyashimatravel.netlify.app/contacto.html");
-        exit;
-    }
-
-    // Se reciben los mail aca
-    $recipient = "matias.monte@davinci.edu.ar";
-
-    // Establecemos el asunto del mail
-    $subject = "New contact from $nombre";
-
-    // Establecemos el cuerpo del mail
-    $email_content = "nombre: $nombre\n";
-    $email_content .= "Email: $email\n\n";
-    $email_content .= "mensaje:\n$mensaje\n";
-
-    // Establecemose el encabezado del correo
-    $email_headers = "From: $nombre <$email>";
-
-    // funcion de envio mails php
-    mail($recipient, $subject, $email_content, $email_headers);
+    $to = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $file = "folleto.jpg";
     
-    // Se re dirige a la seccion gracias cuando se realizo el envio del mail correctamente
-    header("Location: https://miyashimatravel.netlify.app/index.html");
+    //Asunto del email
+    $subject = "Gracias por tu contacto $nombre"; 
+    
+    //Ruta del archivo adjunto
+    $file = "folleto.jpg";
+    
+    //Contenido del Email
+    $htmlContent = '<h1>Recibimos tu mensaje correctamente, en breve responderemos tus dudas</h1>
+        <p>Te adjuntamos la guia de viaje de Miyashima para que la disfrutes y puedas ver la veriedad de lugares que podes visitar</p>';
+    
+    //Encabezado para información del remitente
+    $headers = "From: Miyashima Trave <contacto@miyashimatravel.com>";
+    
+    //Limite Email
+    $semi_rand = md5(time()); 
+    $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x"; 
+    
+    //Encabezados para archivo adjunto 
+    $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\""; 
+    
+    //límite multiparte
+    $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+    "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n"; 
+    
+    //preparación de archivo
+    if(!empty($file) > 0){
+        if(is_file($file)){
+            $message .= "--{$mime_boundary}\n";
+            $fp =    @fopen($file,"rb");
+            $data =  @fread($fp,filesize($file));
+    
+            @fclose($fp);
+            $data = chunk_split(base64_encode($data));
+            $message .= "Content-Type: application/octet-stream; name=\"".basename($file)."\"\n" . 
+            "Content-Description: ".basename($files[$i])."\n" .
+            "Content-Disposition: attachment;\n" . " filename=\"".basename($file)."\"; size=".filesize($file).";\n" . 
+            "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+        }
+    }
+    $message .= "--{$mime_boundary}--";
+    $returnpath = "-f" . $from;
+    
+    //Enviar EMail
+    $mail = @mail($to, $subject, $message, $headers, $returnpath); 
+    
+    // Se re dirige a la seccion GRACIAS cuando se realizo el envio del mail correctamente
+    header("Location: https://miyashimatravel.000webhostapp.com/contacto.html");
 ?>

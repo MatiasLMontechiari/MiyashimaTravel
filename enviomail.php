@@ -16,7 +16,7 @@
         <p>Te adjuntamos la guia de viaje de Miyashima para que la disfrutes y puedas ver la veriedad de lugares que podes visitar</p>';
     
     //Encabezado para información del remitente
-    $headers = "From: Miyashima Trave <contacto@miyashimatravel.com>";
+    $headers = "From: MiyashimaTravel"." <"contacto@miyashimatravel.com">";
     
     //Limite Email
     $semi_rand = md5(time()); 

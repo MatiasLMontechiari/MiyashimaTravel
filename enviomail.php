@@ -30,6 +30,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Redirect to the index.html page with success code
-    header("Location: https://miyashimatravel.netlify.app/index.html");
+    header("Location: https://miyashimatravel.netlify.app/error.html");
 
 ?>

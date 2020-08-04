@@ -84,6 +84,10 @@ footer a {
     color: white;
 }
 
+footer a:hover {
+    color: black;
+}
+
 footer h2:after{
     background-color: rgb(255, 255, 255);
 }
@@ -96,9 +100,11 @@ section {
     padding: 1%;
 }
 
+/******************************************************************/
 /*ARMADO DE GRILLA DE 2 Y 3 COLUMNAS PARA EL SITIO 
   EN MOBILE SE DEBEN APILAR UNAS ABAJO DE LA OTRA DADO QUE CADA UNA
   VA A OCUPAR EL 100% DEL ANCHO DE LA PANTALLA*/
+/******************************************************************/
 
 .filas {
     margin: 0 auto;
@@ -170,19 +176,20 @@ section {
 }
 
 
-/* Add a black background color to the top navigation */
+/* Agregamos fondo blanco para que acople con el logo
+   lo hacemos ocupar el 100% del ancho de la pantalla*/
 .topnav {
     background-color: white;
     overflow: hidden;
     width: 100%;
   }
+  /*Solo en desktop hacemos la barra de navegacion fixed para que siempre este fija en la navegacion*/
   @media screen and (min-width: 480px) {
    .topnav {
      position: fixed;
    }
 }
   
-  /* Style the links inside the navigation bar */
   .topnav a {
     display: block;
     color: tomato;
@@ -195,7 +202,6 @@ section {
       padding: 4% 3% 0% 0%;
   }
 
-    /* Add an active class to highlight the current page */
   .topnav a.active {
     float: left;
     font-size: 2em;
@@ -204,19 +210,15 @@ section {
     padding: 5.3% 20% 0% 0%;
   }
       
-
-  /* Change the color of links on hover */
   .topnav a:hover {
     color: black;
   }
   
-
-  /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
   } 
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  /*Para mobile dejamos solo visible el logo del link al home y el menu hambergesa*/
     @media screen and (max-width: 480px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -232,7 +234,7 @@ section {
     
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /*la clase responsive es agregada por un script de javascript q genera ver los links apilados a la izquierda*/
   @media screen and (max-width: 480px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -330,6 +332,11 @@ section {
 	height:54px;
 	text-indent:-9000px;
 	
+}
+
+#redes li a:hover{
+    background: url(../imagenes/spritehover.png);
+
 }
 #redes li:nth-child(1) a{
 	background-position: 0px -54px;

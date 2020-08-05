@@ -377,10 +377,9 @@ footer h2:after{
 }
 #contact-form {
     width: 90%;
-    margin-left: 5%;
-    padding: 5% 5%;
+    margin: 5% auto;
+    padding: 3% 3%;
     text-align: left;
-    margin-top: 3%;
     background-color: #f7f4ed;
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
@@ -432,6 +431,9 @@ footer h2:after{
     background-color: #fff;
 }
 
+.field-form {
+    margin-bottom: 20px;
+}
 
 /*-----------------------------*/
 /* Configuracion Seccion  info */

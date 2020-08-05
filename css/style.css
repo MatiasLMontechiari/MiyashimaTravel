@@ -165,11 +165,12 @@ section {
     overflow: hidden;
     width: 100%;
     opacity: 0.9;
+    position: fixed;
   }
   /*Solo en desktop hacemos la barra de navegacion fixed para que siempre este fija en la navegacion*/
-  @media screen and (min-width: 481px) {
+  @media screen and (max-width: 480px) {
    .topnav {
-     position: fixed;
+     position: relative;
    }
 }
   

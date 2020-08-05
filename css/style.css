@@ -49,8 +49,8 @@ h2:after {
 }
 
 iframe {
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 350px;
 }
 
 .long-copy {
@@ -239,12 +239,12 @@ section {
     background-size: cover;
     padding-top: 500px;
     color: white;
+    text-align: center;
 }
 
 @media screen and (max-width: 480px) {
     #fullcontainerhome {
         background-image: url(../imagenes/toriiprincipalmobile.jpg);
-        background-size: inherit;
         padding-top: 200px;
     }
   }
@@ -256,7 +256,6 @@ section {
 
 .buttondownload {
     margin-top: 50px;
-    margin-left: 100px;
     display: inline-block;
     background-color: white;
     font-size: 100%;

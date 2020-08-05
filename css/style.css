@@ -191,7 +191,7 @@ section {
     font-size: 2em;
     background: url(../imagenes/logo2.jpg) no-repeat;
     text-indent:-9000px;
-    padding: 5.3% 20% 0% 0%;
+    padding: 70px 300px 0 0;
   }
       
   .topnav a:hover {
@@ -206,14 +206,14 @@ section {
     @media screen and (max-width: 480px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
-      margin: 6% 1%;
+      margin: 8% 1%;
       padding: 6% 10%;
       float: right;
       display: block;
     }
 
     .topnav a.active {
-      padding: 9.5% 35%;
+      padding: 80px 250px 0 0;
     }
     
   }
@@ -233,7 +233,7 @@ section {
     }
 
     .topnav.responsive a.active {
-      padding: 10% 10%
+      padding: 80px 250px 0 0;
     }
   }
 

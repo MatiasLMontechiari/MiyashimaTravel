@@ -13,7 +13,7 @@
     $subject = "Gracias por tu contacto $nombre"; 
     
     //Ruta del archivo adjunto
-    $file = "folleto.jpg";
+    $file = "./imagenes/folleto.jpg";
     
     //Contenido del Email
     $htmlContent = '<h1>Recibimos tu mensaje correctamente, en breve responderemos tus dudas</h1>

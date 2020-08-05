@@ -33,7 +33,7 @@
     $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
     "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n"; 
     
-    //preparación de archivo
+    //preparación de archivo y validacion de existensia del archivo en el servidor
     if(!empty($file) > 0){
         if(is_file($file)){
             $message .= "--{$mime_boundary}\n";

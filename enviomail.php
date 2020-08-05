@@ -55,5 +55,5 @@
     $mail = @mail($to, $subject, $message, $headers, $returnpath); 
     
     // Se re dirige a la seccion GRACIAS cuando se realizo el envio del mail correctamente
-    header("Location: https://miyashimatravel.000webhostapp.com/contacto.html");
+    header("Location: https://miyashimatravel.000webhostapp.com/gracias.html");
 ?>

@@ -13,10 +13,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-main {
-    padding-top: 9%;
-}
-
 li {
     text-align: center;
     list-style: none;
@@ -70,26 +66,6 @@ iframe {
     width: 70%;
     margin-left: 15%;
     text-align: left;
-}
-
-footer {
-    font-size: 85%;
-    background: url(../imagenes/backgroundfooter.jpg) no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-}
-
-footer a:hover {
-    color: black;
-}
-
-footer h2:after{
-    background-color: rgb(255, 255, 255);
 }
 
 section {
@@ -182,6 +158,7 @@ section {
     background-color: white;
     overflow: hidden;
     width: 100%;
+    opacity: 0.9;
   }
   /*Solo en desktop hacemos la barra de navegacion fixed para que siempre este fija en la navegacion*/
   @media screen and (min-width: 480px) {
@@ -264,6 +241,14 @@ section {
     color: white;
 }
 
+@media screen and (max-width: 480px) {
+    #fullcontainerhome {
+        background-image: url(../imagenes/toriiprincipalmobile.jpg);
+        background-size: inherit;
+        padding-top: 200px;
+    }
+  }
+
 #downloadguidebox {
     display: flex;
     background-color: rgba(230, 28, 28, 0.637);
@@ -307,6 +292,27 @@ section {
 /* Configuracion Seccion       */
 /* Footer de la pagina         */
 /*-----------------------------*/
+
+footer {
+    font-size: 85%;
+    background: url(../imagenes/backgroundfooter.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: black;
+}
+
+footer h2:after{
+    background-color: rgb(255, 255, 255);
+}
+
 @media screen and (max-width: 480px) {
     .footer-desktop {
         display: none;

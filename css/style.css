@@ -51,7 +51,6 @@ h2:after {
     background-color: rgb(238, 18, 18);
     content: " ";
     width: 100px;
-    margin: 0 auto;
     margin-top: 30px;
 }
 
@@ -90,7 +89,7 @@ section {
 /******************************************************************/
 
 .filas {
-    margin: 0 auto;
+    margin: 0;
     zoom: 1;
 }
 
@@ -106,7 +105,7 @@ section {
 .columna {
 	display: block;
 	float:left;
-	margin: 1% 0 1% 1.6%;
+	margin: 0;
 }
 
 .columna:first-child { margin-left: 0; }

@@ -167,7 +167,7 @@ section {
     opacity: 0.9;
   }
   /*Solo en desktop hacemos la barra de navegacion fixed para que siempre este fija en la navegacion*/
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
    .topnav {
      position: fixed;
    }
@@ -324,7 +324,7 @@ footer h2:after{
         display: none;
     }
   }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
     .footer-mobile {
         display: none;
     }

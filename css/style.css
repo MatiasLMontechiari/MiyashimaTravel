@@ -13,6 +13,13 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+@media only screen and (max-width: 480px) {
+    html
+    body { 
+        font-size: 17px;
+	}
+}
+
 li {
     text-align: center;
     list-style: none;
